@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2048</title>
+        <link rel="stylesheet" href = "node_modules/bulma/css/bulma.css"></link>
+        <link rel="stylesheet" href = "style.css"></link>
+    </head>
+    <body class="has-background-black">
+        <h1 id="title" class="title is-1 has-text-centered has-text-warning">twenty fourty eight</h1>
+        <p class="has-text-warning has-text-centered">Use the arrow keys to combine the tiles and get the 2048 tile!</p>
+        <h3 id="winLose"></h3>
+        <div id="root"></div>
+        <div class="columns is-half">
+            <div class="column is-1">
+                <h6 class="subtitle has-text-warning ">Score: 0</h6>
+            </div>
+            <div class="column is-1">
+                <button id="newGameBtn" class="button is-warning is-outlined" type = "reset">New Game</button>
+            </div>
+        </div>
+        <table id="myTable" class="table has-background-black is-bordered is-fullwidth">
+            <tr>
+              <td class="has-text-centered has-text-warning">1</td>
+              <td class="has-text-centered has-text-warning">2</td>
+              <td class="has-text-centered has-text-warning">3</td>
+              <td class="has-text-centered has-text-warning">4</td>
+            </tr>
+            <tr>
+                <td class="has-text-centered has-text-warning">5</td>
+                <td class="has-text-centered has-text-warning">6</td>
+                <td class="has-text-centered has-text-warning">7</td>
+                <td class="has-text-centered has-text-warning"> 8</td>
+              </tr>
+              <tr>
+                <td class="has-text-centered has-text-warning">9</td>
+                <td class="has-text-centered has-text-warning"> 10</td>
+                <td class="has-text-centered has-text-warning">11</td>
+                <td class="has-text-centered has-text-warning">12</td>
+              </tr>
+              <tr>
+                <td class="has-text-centered has-text-warning">13</td>
+                <td class="has-text-centered has-text-warning">14</td>
+                <td class="has-text-centered has-text-warning">15</td>
+                <td class="has-text-centered has-text-warning">16</td>
+              </tr>
+          </table>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="controller.js" type ="module"></script>
+        <script src="engine/game.js" type="module"></script>
+    </body>
+</html>
